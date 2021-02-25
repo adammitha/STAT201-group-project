@@ -31,3 +31,11 @@
    - Give constructive feedback when teammates produce work that isn't up to group standards
    - Provide the opportunity to correct/improve the work
    - Escalate to instructor/TA if we cannot resolve conflicts internally
+
+Signed:
+Michael DeMarco
+Adam Mitha
+Acky Xu
+Icy Xu
+
+
