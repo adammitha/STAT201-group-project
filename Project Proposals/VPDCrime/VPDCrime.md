@@ -2,6 +2,10 @@
 
 ## Introduction
 
+In the past several months, multiple articles have raised the issue of increasing crime rates in Metro Vancouver. The significant economic contraction of Covid-19 combined with fewer and more difficult-to-access resources for those with unstable housing has driven increase in property-related crimes. In addition, hate crimes have more than doubled across the board, with those of East Asian descent being impacted most significantly, likely due to the origins of the Covid-19 virus. These issue have led to a heightened concern in the general population about crime rates, which has caused significant tension between municipal governments and police departments with respect to funding cuts due to Covid-related drops in municipal revenue sources.
+
+In light of these events, we are interested in exploring how much (if at all) crime rates have increased in several Vancouver areas over the last year. We will be using the Vancouver Police Department's open crime data to compare 2019 and 2020 crime rates in neighbourhoods from across the income spectrum to assess just how much crime rates have changed over the past year.
+
 2020 had impacted the lively hood of those that were fortunate and those that were already homeless.  In desperate times, Vancouver news outlet reported that crime hate has increased in Vancouver as people are trying to get their basic necessities met.  
 
 In our project, we are interested in exploring the question: has crime rate in actually increase in Vancouver by a significant amount in 2020, as reported by the new outlets?
@@ -45,3 +49,5 @@ NEED TWO SOURCES WITH REGARDING INCREASE CRIME RATE
 
 1. https://www.cbc.ca/news/canada/british-columbia/crime-statistics-vancouver-2020-1.5779400
 2. https://www.osac.gov/Country/Canada/Content/Detail/Report/fd184899-ac3b-4e43-a31b-18f82fda35c4
+3. https://bc.ctvnews.ca/hate-crimes-up-97-overall-in-vancouver-last-year-anti-asian-hate-crimes-up-717-1.5314307
+4. https://www.cbc.ca/news/canada/british-columbia/city-of-vancouver-freezes-police-department-funding-as-part-of-2021-budget-1.5833731
