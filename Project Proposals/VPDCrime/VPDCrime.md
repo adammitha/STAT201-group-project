@@ -1,4 +1,4 @@
-# Crimerate of Neighbourhoods Pre and Post 2020
+# Crime Rate of Neighbourhoods Pre and Post 2020
 
 ## Introduction
 
@@ -6,7 +6,7 @@
 
 In our project, we are interested in exploring the question: has crime rate in actually increase in Vancouver by a significant amount in 2020, as reported by the new outlets?
 
-## Preliminart Results
+## Preliminary Results
 
 ## Methods: Plan
 
@@ -38,7 +38,7 @@ Using our distribution, we will find the proportion of Thefit related crime in 2
 Then we will run our analysis to see if there is a significant change in crime rate in 2020 (either increase or decrease) for our hypothesis testing.
 
 
-## Reference
+## References
 
 NEED TWO SOURCES WITH REGARDING INCREASE CRIME RATE
 - maybe look at news report about increase crime?  then compare it to our data?
