@@ -42,3 +42,6 @@ Then we will run our analysis to see if there is a significant change in crime r
 
 NEED TWO SOURCES WITH REGARDING INCREASE CRIME RATE
 - maybe look at news report about increase crime?  then compare it to our data?
+
+1. https://www.cbc.ca/news/canada/british-columbia/crime-statistics-vancouver-2020-1.5779400
+2. https://www.osac.gov/Country/Canada/Content/Detail/Report/fd184899-ac3b-4e43-a31b-18f82fda35c4
