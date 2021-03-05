@@ -6,11 +6,12 @@ In the past several months, multiple articles in the popular press have raised t
 
 In light of these events, we are interested in exploring how much (if at all) crime rates have increased in over the last year. We will be using the Vancouver Police Department's open crime data to compare 2017-2020 crime rates in neighbourhoods across the income spectrum to assess just how much crime rates have changed over the past year.
 
-2020 had impacted the lively hood of those that were fortunate and those that were already homeless.  In desperate times, Vancouver news outlet reported that crime hate has increased in Vancouver as people are trying to get their basic necessities met.  
-
-In our project, we are interested in exploring the question: has crime rate in actually increase in Vancouver by a significant amount in 2020, as reported by the new outlets?
+In our project, we will explore whether theft increased as a proportion of all crimes from mean of 2017-2019 to 2020. We will also evaluate whether the spread of proportion, as measured by the standard deviation, changed between these two intervals.
 
 ## Preliminary Results
+
+- Compute estimates for theft as a proportion of all crime
+- Update graph to just show thefts
 
 ## Methods: Plan
 
