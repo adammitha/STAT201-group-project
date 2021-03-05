@@ -17,6 +17,18 @@ In our project, we are interested in exploring the question: has crime rate in a
 We will retrieve Vancouver Police Force's crime data from the link below:
 http://geodash.vpd.ca/opendata/crimedata_download/crimedata_csv_all_years.zip?disclaimer=on&x=101&y=21
 
+The zip file from above contains a data set that has all crimes reported to the VPD.  
+
+We have to conside that although the data set contains all the crimes reported to VPD, it does not represent all the crime that occured in Vancouver. Reported crime are a sample of all crimes occured in Vancouver, collected via people calling in to reported that a crime has occured. This means that there will be crimes that occured, and was not reported to VPD since people might not consider petty crimes to be worth the time involving the police.  That might be an inherient bias for us, as we are looking at if petty crime increased during 2020.  
+
+That said, those bias might be mitigated since we are analyzing if the proportion of thefts increased in 2020 compared to previous years.  
+Since proportion of thefts is calculated by (All reported thefts that occured)/(All reported crimes), there are two ways that might increase the proportion of thefts:
+
+- The more thefts are reproted compared to the other crimes that are reported in 2020.
+- Even as people report less crime, the amount of thefts that are reported is at least the same amount as previous years.
+
+This means that unless there are other unforeseen reason of why people might change why they will report certain crimes and not other, as long as the ratio of reported thefts and actual thefts that occured does not change (an parameter that we cannot observe), we can assume that more theft has to occur for the proprotion of reported thefts to increase.
+
 Inside the zip file, there is a CSV file call 'crimedata_csv_all_years.csv' with the following headers:
 
 - YEAR
@@ -32,20 +44,23 @@ Inside the zip file, there is a CSV file call 'crimedata_csv_all_years.csv' with
 To narrow the scope of our project, we will focus on these neighbourhoods and run individual analysis on the crime rate of those neighbourhood:
 
 - Strathcona 
+- West End
 - Shaughnessy
-- Marpole
-- (Try to get a good spread of wealth of neighbourhood, since VPD bases their subdivision according to Stats Canada Census Division, we can use that to base our focus neighbourhoods)
 
-Since we have the population of all crime reported in Vancouver, we will create a sampling distribution for 2020 and combination of 2019, 2018, and 2017(maybe? see if we need to do bootstrap.  If so, we can draw a sampel form the data set of the neighbourhood we are interested in and go form there).  
+As for right now, we will focus on Strathcona and have the other neighbourhood as further analysis.
 
-Using our distribution, we will find the proportion of Thefit related crime in 2017-2019 to use as our null hypothesis of what the crime rate in 2020 should be.  
-Then we will run our analysis to see if there is a significant change in crime rate in 2020 (either increase or decrease) for our hypothesis testing.
+We base our selection on of the neighbourhood base on the 'Average total income in 2015 among recipient'(ID#1858) as reported in Census Local Area Profiles 2016 from City of Vancouver[1].  The list above ranks the neighbourhood from the lowest average total income to the highest, with West End roughly at the median of all the neighbourhood.
 
+While we have all the crimes reported of all in Vancouver, we don't actually have all the crime that occured in Vancouver;  we have a sample of crimes collected via people reporting it to the VPD.  There might might inherent bias in what type of crimes might be reported, as people might not think petty crimes are worth the time to call the police.  That side, we believe that IF petty crime was to increase, there should be more petty crimes reported in proportion to other crimes.  
+
+Since we do not know the actual
 
 ## References
 
 NEED TWO SOURCES WITH REGARDING INCREASE CRIME RATE
 - maybe look at news report about increase crime?  then compare it to our data?
+
+[1] https://opendata.vancouver.ca/explore/dataset/census-local-area-profiles-2016/information/
 
 1. https://www.cbc.ca/news/canada/british-columbia/crime-statistics-vancouver-2020-1.5779400
 2. https://www.osac.gov/Country/Canada/Content/Detail/Report/fd184899-ac3b-4e43-a31b-18f82fda35c4
