@@ -1,2 +1,11 @@
+# Downloaded data
+
+*.zip
+*.csv
+*.txt
+*.pdf
+
+# Code
+
 .ipynb_checkpoints
 .DS_Store
