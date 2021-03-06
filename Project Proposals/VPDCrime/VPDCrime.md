@@ -61,9 +61,13 @@ Since we do not know the actual
 NEED TWO SOURCES WITH REGARDING INCREASE CRIME RATE
 - maybe look at news report about increase crime?  then compare it to our data?
 
-[1] https://opendata.vancouver.ca/explore/dataset/census-local-area-profiles-2016/information/
+[1] Census local AREA profiles 2016. (2018, April 10). Retrieved March 06, 2021, from https://opendata.vancouver.ca/explore/dataset/census-local-area-profiles-2016/information/
 
-1. https://www.cbc.ca/news/canada/british-columbia/crime-statistics-vancouver-2020-1.5779400
-2. https://www.osac.gov/Country/Canada/Content/Detail/Report/fd184899-ac3b-4e43-a31b-18f82fda35c4
-3. https://bc.ctvnews.ca/hate-crimes-up-97-overall-in-vancouver-last-year-anti-asian-hate-crimes-up-717-1.5314307
-4. https://www.cbc.ca/news/canada/british-columbia/city-of-vancouver-freezes-police-department-funding-as-part-of-2021-budget-1.5833731
+Canada 2020 Crime &amp; Safety Report: Vancouver. (2020, June 19). Retrieved March 05, 2021, from https://www.osac.gov/Country/Canada/Content/Detail/Report/fd184899-ac3b-4e43-a31b-18f82fda35c4
+
+City of Vancouver FREEZES police department funding as part of 2021 BUDGET | CBC News. (2020, December 09). Retrieved March 06, 2021, from  https://www.cbc.ca/news/canada/british-columbia/city-of-vancouver-freezes-police-department-funding-as-part-of-2021-budget-1.5833731
+
+Sajan, B., &amp; Mangione, K. (2021, February 19). Hate crimes up 97% overall in Vancouver last YEAR, ANTI-ASIAN hate crimes up 717%. Retrieved March 06, 2021, from  https://bc.ctvnews.ca/hate-crimes-up-97-overall-in-vancouver-last-year-anti-asian-hate-crimes-up-717-1.5314307
+
+Vancouver crime rate steady in 2020 compared TO 2019, according to new stats FROM VPD | CBC News. (2020, October 28). Retrieved March 05, 2021, from      https://www.cbc.ca/news/canada/british-columbia/crime-statistics-vancouver-2020-1.5779400
+
