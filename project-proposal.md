@@ -9,7 +9,7 @@
 - [x] Proposal includes: title, intro, preliminary results, methods, references
 - [x] Introduction provides background to topic
 - [x] Introduction clearly states research question
-- [ ] Research question involves one random variable of interest
+- [x] Research question involves one random variable of interest
 - [x] Research question is spread across 2+ categories
 - [x] Location parameter identified
 - [x] Scale parameter identified
@@ -19,15 +19,15 @@
 - [x] Dataset read from web into R
 - [x] Dataset is cleaned and wrangled
 - [x] Plot the relevant raw data; tailored to research question
-- [ ] Esimtates of parameter, across groups, identified; present in table, include in plot
+- [x] Esimtates of parameter, across groups, identified; present in table, include in plot
 - [x] Nothing is printed which takes up excess screen space
-- [ ] Describe what ways our report is trustworthy
-- [ ] Describe why plots and estimates are insufficient for stakeholder; what else is needed?
+- [x] Describe what ways our report is trustworthy
+- [ ] Describe why plots and estimates are insufficient for stakeholder; what else is needed? - address in analysis
 - [ ] Include hypothesis test, confidence interval (boostrapping, asymptotics)
-- [ ] What do you expect find?
-- [ ] What impact could such findings have?
-- [ ] What future questions could this read to?
-- [ ] 2+ citations of literature included
+- [x] What do you expect find?
+- [x] What impact could such findings have?
+- [x] What future questions could this read to?
+- [x] 2+ citations of literature included
 
 Group 4, Project Proposal (Acky Xu, Adam Mitha, Icy Xu, Michael DeMarco)
 
