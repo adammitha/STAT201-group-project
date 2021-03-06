@@ -14421,7 +14421,7 @@ The following objects are masked from &#39;package:stats&#39;:
 <h1 id="Examining-the-Impact-of-COVID-19-on-the-Proportion-of-Theft-Related-Crimes-in-Vancouver">Examining the Impact of COVID-19 on the Proportion of Theft-Related Crimes in Vancouver<a class="anchor-link" href="#Examining-the-Impact-of-COVID-19-on-the-Proportion-of-Theft-Related-Crimes-in-Vancouver">&#182;</a></h1><p><strong>Authors</strong> Group 4, Project Proposal (Acky Xu, Adam Mitha, Icy Xu, Michael DeMarco)</p>
 <p><strong>Abstract</strong> This project looks at the impact of the COVID-19 pandemic on theft-related crime in select Vancouver neighborhoods. Novel inferential techniques are applied to estimate the proportion of theft crime relative to all crime between now (2020) and the mean proportion of the past 3 years (2017 to 2019). Our findings are still to be  determined, and will be included in the final report.</p>
 <p style="display: block; text-align: center;">
-    <img style="display: block; margin: 0 auto;" src="./images/vpd.jpg" alt="A VPD car" width="50%" />
+    <img style="display: block; margin: 0 auto;" src="./vpd.jpg" alt="A VPD car" width="50%" />
 </p><p style="text-align: center;"><i>A Vancouver Police Department (VPD) car.</i></p>
 </div>
 </div>
@@ -14429,7 +14429,7 @@ The following objects are masked from &#39;package:stats&#39;:
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><h3 id="Background">Background<a class="anchor-link" href="#Background">&#182;</a></h3><p>Since the beginning of the COVID-19 pandemic in March of 2020, many have discussed the issue of alleged increasing crime rates both globally and within Metro Vancouver. Indeed, an unprecedented economic contraction <a href="https://www150.statcan.gc.ca/n1/pub/11-631-x/2020004/conclusions-eng.htm">[Statistics Canada, 1]</a> coupled with fewer resources, such as shelters or food banks, has driven an increase in many types of crime, including in fraud and counterfeiting crime <a href="https://www.interpol.int/en/News-and-Events/News/2019/Operation-Pangea-shining-a-light-on-pharmaceutical-crime">[Interpol, 2]</a>, hate crimes <a href="https://abcnews.go.com/US/fbi-warns-potential-surge-hate-crimes-asian-americans/story?id=69831920">[ABC News, 3]</a>—with those of East Asian descent being impacted most significantly—and domestic violence <a href="https://news.un.org/en/story/2020/04/1061052">[UN News, 4]</a>.</p>
 <p>These spikes have led to tension between municipal governments and police departments with respect to budgeting in the wake of the economic depravity of the COVID-19 era. The City of Vancouver, specifically, enacted a freeze on the police budget in 2021 <a href="https://www.cbc.ca/news/canada/british-columbia/city-of-vancouver-freezes-police-department-funding-as-part-of-2021-budget-1.5833731">[CBC, 5]</a>.</p>
-<p>Existing literature has primarily focused on many types of "global" crime (e.g., organized crime, terrorist attacks), and has largely concluded that on the whole, these types of crimes are increasing through the pandemic year; in our analysis, we'll look closely at "petty" crimes, specifically theft, and see how, if at all, the rate of theft crime has changed admist the pandemic. We choose three neighborhoods—Strathcona, Marpole, and Shaughnessy—for our analysis. Per the City of Vancouver's 2016 local area profiles from 2016, these are the "average total incomes among residents"  in those three neighborhoods <a href="https://opendata.vancouver.ca/explore/dataset/census-local-area-profiles-2016/information/">[City of Vancouver, 9]</a>:</p>
+<p>Existing literature has primarily focused on many types of "global" crime (e.g., organized crime, terrorist attacks), and has largely concluded that on the whole, these types of crimes are increasing through the pandemic year; in our analysis, we'll look closely at "petty" crimes, specifically theft, and see how, if at all, the rate of theft crime has changed amidst the pandemic. We choose three neighborhoods—Strathcona, Marpole, and Shaughnessy—for our analysis. Per the City of Vancouver's 2016 local area profiles, these are the "average total incomes among residents"  in those three neighborhoods <a href="https://opendata.vancouver.ca/explore/dataset/census-local-area-profiles-2016/information/">[City of Vancouver, 9]</a>:</p>
 <ul>
 <li>Shaughnessy, \$118,668</li>
 <li>Marpole, \$39,020</li>
@@ -14633,7 +14633,7 @@ cols(
 <li>select only data relevant to our analysis, and</li>
 <li>convert crime types and neighborhoods to a factor, since we're working with proportions (i.e., categorical data).</li>
 </ol>
-<p>We're primarily interested in the year, type and neighborhood of crimes, so we'll extract those columns and discard the rest. In addition, we would like to focus on year 2017-2020.</p>
+<p>We're primarily interested in the year, type and neighborhood of crimes, so we'll extract those columns and discard the rest. In addition, we would like to focus on the years 2017 to 2020.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14645,7 +14645,6 @@ cols(
 <div class=" highlight hl-r"><pre><span></span><span class="c1"># 1. Generally, in R, you don&#39;t see ALL CAPS column names,</span>
 <span class="c1"># so we can modify the column names manually (with the help)</span>
 <span class="c1"># of the janitor library</span>
-
 <span class="n">crime_data</span> <span class="o">&lt;-</span> <span class="n">crime_data</span> <span class="o">%&gt;%</span> <span class="nf">clean_names</span><span class="p">()</span>
 <span class="nf">head</span><span class="p">(</span><span class="n">crime_data</span><span class="p">)</span>
 </pre></div>
@@ -14748,8 +14747,7 @@ cols(
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="c1"># 3. Select only type, year, neighbourhood</span>
-<span class="c1"># Filter to the data range of 2017-2020</span>
-
+<span class="c1"># Filter to the date range of 2017-2020</span>
 <span class="n">crime_data</span> <span class="o">&lt;-</span> <span class="n">crime_data</span> <span class="o">%&gt;%</span> 
     <span class="nf">select</span><span class="p">(</span><span class="n">type</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">neighbourhood</span><span class="p">)</span> <span class="o">%&gt;%</span>
     <span class="nf">filter</span><span class="p">(</span><span class="m">2017</span> <span class="o">&lt;=</span> <span class="n">year</span> <span class="o">&amp;</span> <span class="n">year</span> <span class="o">&lt;=</span> <span class="m">2020</span><span class="p">)</span>
@@ -14985,7 +14983,7 @@ cols(
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>We chosen three neighborhoods that we believe are representative of different economic classes present in Vancouver, in terms of median wealth: Shaughnessy, Strathcona, and Marpole. Let's save those as well.</p>
+<p>We chose three neighborhoods that we believe are representative of different economic classes present in Vancouver, in terms of median wealth: Shaughnessy, Strathcona, and Marpole. Let's save those as well.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -15092,7 +15090,7 @@ cols(
 <p>Now, to get a better sense of our data set, we'll produce three plots to explore, at a high level, what crime looks like in Vancouver both over time and by neighborhood. Our three plots will be:</p>
 <ol>
 <li>A line plot of total crime over time, grouped by neighborhood; this will demonstrate the change in total crime over time</li>
-<li>A stacked bar chart showing a break down of crime type, grouped by neighborhood; this will demonstrate the relative frequencies of each crime type, by neighborhood</li>
+<li>A stacked bar chart showing a breakdown of crime type, grouped by neighborhood; this will demonstrate the relative frequencies of each crime type, by neighborhood</li>
 <li>A waffle plot to show to crime types proportions, grouped by year; this will demonstrate the relative frequencies of each crime type, by year</li>
 </ol>
 <p>Let's begin with the line plot.</p>
@@ -15105,7 +15103,7 @@ cols(
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-r"><pre><span></span><span class="c1"># To produce our line plot, first, we&#39;ll need to compute the total amount of crime</span>
-<span class="c1"># by neighborhood and yea</span>
+<span class="c1"># by neighborhood and year</span>
 <span class="n">neighbourhood_year_counts</span> <span class="o">&lt;-</span> <span class="n">crime_data</span> <span class="o">%&gt;%</span>
     <span class="nf">group_by</span><span class="p">(</span><span class="n">neighbourhood</span><span class="p">,</span> <span class="n">year</span><span class="p">)</span> <span class="o">%&gt;%</span> 
     <span class="nf">summarise</span><span class="p">(</span><span class="n">n</span> <span class="o">=</span> <span class="nf">n</span><span class="p">())</span>
@@ -17357,7 +17355,7 @@ height=300
     <span class="nf">geom_waffle</span><span class="p">(</span><span class="n">n_rows</span> <span class="o">=</span> <span class="m">10</span><span class="p">,</span> <span class="n">flip</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s">&quot;white&quot;</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="m">0.25</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">facet_wrap</span><span class="p">(</span><span class="o">~</span><span class="n">year</span><span class="p">,</span> <span class="n">nrow</span> <span class="o">=</span> <span class="m">2</span><span class="p">,</span> <span class="n">strip.position</span> <span class="o">=</span> <span class="s">&quot;bottom&quot;</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">scale_x_discrete</span><span class="p">()</span> <span class="o">+</span> 
-    <span class="nf">scale_y_continuous</span><span class="p">(</span><span class="n">labels</span> <span class="o">=</span> <span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="n">x</span> <span class="o">*</span> <span class="m">10</span><span class="p">,</span> <span class="c1"># make this multiplyer the same as n_rows</span>
+    <span class="nf">scale_y_continuous</span><span class="p">(</span><span class="n">labels</span> <span class="o">=</span> <span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="n">x</span> <span class="o">*</span> <span class="m">10</span><span class="p">,</span> <span class="c1"># make this multiplier the same as n_rows</span>
                        <span class="n">expand</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">))</span> <span class="o">+</span>
     <span class="nf">labs</span><span class="p">(</span>
         <span class="n">title</span> <span class="o">=</span> <span class="s">&quot;Waffle Bar Chart for Crime\nType Data From 2017-2020\n&quot;</span><span class="p">,</span>
@@ -18778,27 +18776,27 @@ height=360
 <h2 id="Methods">Methods<a class="anchor-link" href="#Methods">&#182;</a></h2><h3 id="Strengths">Strengths<a class="anchor-link" href="#Strengths">&#182;</a></h3><p>Our report uses data from the Vancouver Police Department to study trends in crime across select Vancouver neighborhoods. It is "trustworthy" in the sense that we will look to be careful at providing <em>ranges</em> of our final answer, rather than solely point estimates. However, that alone isn't enough to guarantee an effective analysis.</p>
 <p>We're also using blocking in our analysis. Crime has been linked to wealth (and more specifically, socioeconomic status, or SES) <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1745-9125.1999.tb00483.x">[World Bank, 8]</a>, so we'll treat it as a blocking variable, and group our data by three neighborhoods that represent different levels of wealth.</p>
 <p>Finally, we're being careful to not simply compare the trend of crime between 2019 and 2020. Since our focus is COVID-19, we're not especially interested in the 1-year trend, but rather, how 2020 has deviated from the "norm." It is plausible that 2019 was an outlier, so "merging" the 3-year span of 2017 to 2019 should provide us a better sense of the general, recent crime levels in Vancouver.</p>
-<h3 id="Limitations">Limitations<a class="anchor-link" href="#Limitations">&#182;</a></h3><p>Some could argue that many of the "petty" crimes we're interested in, like theft, largely go unreported. And while our analysis does indeed aim to provide an estimate from this sample of strictly reported crimes, arguing what makes a "fair" range is a hard question to answer. Countless factors effect whether or not a crime gets reported, and trust in police generally was found to be at a "record low" in August of 2020 <a href="https://www.nytimes.com/2020/08/12/us/gallup-poll-police.html">[New York Times, 10]</a>. Accounting for this variability, statistically, is arduous.</p>
+<h3 id="Limitations">Limitations<a class="anchor-link" href="#Limitations">&#182;</a></h3><p>Some could argue that many of the "petty" crimes we're interested in, like theft, largely go unreported. And while our analysis does indeed aim to provide an estimate from this sample of strictly reported crimes, arguing what makes a "fair" range is a hard question to answer. Countless factors affect whether or not a crime gets reported, and trust in police generally was found to be at a "record low" in August of 2020 <a href="https://www.nytimes.com/2020/08/12/us/gallup-poll-police.html">[New York Times, 10]</a>. Accounting for this variability, statistically, is arduous.</p>
 <p>Furthermore, while our neighborhood selections do represent a fair amount of spread in the wealth of various Vancouver neighborhoods, they're by no means perfectly representative. Shaughnessy, for one, being at a rather high-end extreme of wealth, might be less useful in our analysis, as it doesn't really generalize to any kind of useful population outside of that specific neighborhood.</p>
 <h3 id="Analysis">Analysis<a class="anchor-link" href="#Analysis">&#182;</a></h3><p>Of course, the plots and estimates provided above are <em>not</em> sufficient for any stakeholder, such as the municipal government or the VPD themselves. Since we're working with a sample, we must report a range of plausible values, rather than a single point estimate. Thankfully, there are a few steps we can take to do this in different ways:</p>
 <p>Firstly, we can produce a hypothesis test, where our null is that theft-related crime rates have <em>not</em> changed:</p>
 $$H_0: \Delta{p} = 0$$<p>and our alternative hypothesis is that there has been some sort of change.</p>
-$$H_A: \Delta{p} \ne 0$$<p>We'll have a to do a two-tailed test and check if our sample difference in proportions falls within our significance level. As for what value of $\alpha$ to use, it's hard to say. We'll likely go with something like 10%, since we're working with a social science topic, and thus more variability is generally considered acceptable.</p>
+$$H_A: \Delta{p} \ne 0$$<p>We'll have to do a two-tailed test and check if our sample difference in proportions falls within our significance level. As for what value of $\alpha$ to use, it's hard to say. We'll likely go with something like 10%, since we're working with a social science topic, and thus more variability is generally considered acceptable.</p>
 <p>Secondly, we can produce a confidence interval to report a range of plausible values alongside our difference in proportions statistic. We'll use two techniques, both bootstrapping (i.e., generating a bootstrapped sampling distribution) and asymptotics, to yield a range of values at a confidence level ("CL") of 90%, though that value could change as we deem appropriate.</p>
 <p>(Note that two-tailed hypothesis tests are confidence intervals are practically equivalent at ${CL} = 1 - \alpha$, but doing both approaches is good for rigor and completeness, and allows us to use both bootstrapping and asymptotics.)</p>
-<p>Along the way, we will be sure to visualize and interpret our results within the context of our problem. These techniques will also us to report something actually sufficient for a stakeholder: both a statistic and a range. This is at the core of inferential statistics.</p>
+<p>Along the way, we will be sure to visualize and interpret our results within the context of our problem. These techniques will also allow us to report something actually sufficient for a stakeholder: both a statistic and a range. This is at the core of inferential statistics.</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Reflection">Reflection<a class="anchor-link" href="#Reflection">&#182;</a></h2><p>In our final report, we expect to find that the rate of theft-related crime has changed significantly from past years, supporting the hypothesis that the pandemic is correlated to changing crime rates, including at local levels, with petty crimes.</p>
-<p>We anticipate the impact of our findings will be the production of actionable insights for both city officials and the VPD. Getting budgets right is hard, but using data-driven methods makes the process significantly easier. Through hypothesis testing, we can put the put both the safety and security of Vancouverites as a top priority, as weighing police funding versus additional social security measures is of utmost importance.</p>
+<p>We anticipate the impact of our findings will be the production of actionable insights for both city officials and the VPD. Getting budgets right is hard, but using data-driven methods makes the process significantly easier. Through hypothesis testing, we can put both the safety and security of Vancouverites as a top priority, as weighing police funding versus additional social security measures is of utmost importance.</p>
 <p>Three examples of further questions that could extend this analysis are:</p>
 <ol>
 <li>Have other (perhaps, more small scale) pandemics affected the rate of theft-related crime? A study could be done of SARS in Toronto, from 2003-04.</li>
 <li>How has COVID-19 affected the rate of theft-related crime at different cities across Canada? Cities could include: Calgary, Edmonton, Winnipeg, Regina, etc.</li>
-<li>In what ways has rate of violent crime changed since the pandemic begun? We could look at the rate of more intense crimes, still on a city basis.</li>
+<li>In what ways has the rate of violent crime changed since the pandemic began? We could look at the rate of more intense crimes, still on a city basis.</li>
 </ol>
 
 </div>
