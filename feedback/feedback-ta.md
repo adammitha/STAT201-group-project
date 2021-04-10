@@ -52,9 +52,9 @@ Preliminary Results:
 
 "We chose three neighborhoods that we believe are representative of different economic classes present in Vancouver, in terms of median wealth:" --- previously you were looking at mean wealth (fixed!)
 
-"We're hoping to compare crime rates across years in neighborhoods that represent a reasonable distribution of incomes." --- What is unreasonable about using the full dataset of all neighbourhoods? Don't all neighbourhoods give the true distribution of incomes in Vancouver? Selecting 1 neighbourhood of each "class" feels like you're artificially modifying the socioeconomic composition of your data to fit your belief about how Vancouver should be. What if, in reality, Vancouver is composed of many low income neighbourhoods and only a couple wealthy ones?
-More justification as to why you select 3 neighbourhoods, of different economic classes, is needed. For example, do you plan to look at how theft rates have changed within different economic classes of neighbourhoods? Or are you trying to make sure you have a sample that is somehow representative of Vancouver and you're controlling for a lurking variable? If your goal is to quantify changes in theft rate in Vancouver, then why not use all data from all of Vancouver? (we just used all data)
-Why these three neighbourhoods in particular? Yes, they may each be from a different wealth class, but there must be other ways to take a sample of 1 neighbourhood from each class. If someone was reviewing your work they would want to know why you picked these three and want to know that you didn't just cherry pick neighbourhoods that made your results more significant. (this will be changed)
+"We're hoping to compare crime rates across years in neighborhoods that represent a reasonable distribution of incomes." --- What is unreasonable about using the full dataset of all neighborhoods? Don't all neighborhoods give the true distribution of incomes in Vancouver? Selecting 1 neighborhood of each "class" feels like you're artificially modifying the socioeconomic composition of your data to fit your belief about how Vancouver should be. What if, in reality, Vancouver is composed of many low income neighborhoods and only a couple wealthy ones?
+More justification as to why you select 3 neighborhoods, of different economic classes, is needed. For example, do you plan to look at how theft rates have changed within different economic classes of neighborhoods? Or are you trying to make sure you have a sample that is somehow representative of Vancouver and you're controlling for a lurking variable? If your goal is to quantify changes in theft rate in Vancouver, then why not use all data from all of Vancouver? (we just used all data)
+Why these three neighborhoods in particular? Yes, they may each be from a different wealth class, but there must be other ways to take a sample of 1 neighborhood from each class. If someone was reviewing your work they would want to know why you picked these three and want to know that you didn't just cherry pick neighborhoods that made your results more significant. (this will be changed)
 
 "A line plot of total crime over time" --- Isn't your data only reported crimes, not total crime like you specified to be your population? (done!)
 
@@ -62,21 +62,21 @@ Should provide a year range on your stacked bar chart. (done!)
 
 "30 items." --- Items means reported crimes? (yes, done!)
 
-Your estimates break down proportion of theft crimes across neighbourhoods, but are the proportions out of the total number of reported crimes in all of Vancouver, out of the total number of reported crimes in these 3 neighbourhoods, or just within each neighbourhood? Make sure this is clear without the reader having to decipher your code. (added line!)
+Your estimates break down proportion of theft crimes across neighborhoods, but are the proportions out of the total number of reported crimes in all of Vancouver, out of the total number of reported crimes in these 3 neighborhoods, or just within each neighborhoods? Make sure this is clear without the reader having to decipher your code. (added line!)
 
 Methods:
 
-"We're also using blocking in our analysis." --- Is there random sampling within blocks at all? It seems like you just hand picked a neighbourhood from each block.
+"We're also using blocking in our analysis." --- Is there random sampling within blocks at all? It seems like you just hand picked a neighborhoods from each block.
 (done kinda!)
 
-"Crime has been linked to wealth (and more specifically, socioeconomic status, or SES) " --- If so, then why not use the full data of all neighbourhoods from Vancouver, rather than artificially creating a sample of neighbourhoods from different SES? Are you not changing the composition of SES, relative to the full data for Vancouver, by handpicking neighbourhoods?
+"Crime has been linked to wealth (and more specifically, socioeconomic status, or SES) " --- If so, then why not use the full data of all neighborhoods from Vancouver, rather than artificially creating a sample of neighborhoods from different SES? Are you not changing the composition of SES, relative to the full data for Vancouver, by handpicking neighborhoods?
 (changed!)
 
 "trust in police generally was found to be at a "record low" in August of 2020 [New York Times, 10]." --- Do you think these findings also apply to Vancouver police?
 (TODO: find stats can article)
 
-"Shaughnessy, for one, being at a rather high-end extreme of wealth, might be less useful in our analysis, as it doesn't really generalize to any kind of useful population outside of that specific neighborhood." --- So why did you pick it over another high income neighbourhood?
-(TODO: fix neighbourhoods)
+"Shaughnessy, for one, being at a rather high-end extreme of wealth, might be less useful in our analysis, as it doesn't really generalize to any kind of useful population outside of that specific neighborhood." --- So why did you pick it over another high income neighborhood?
+(TODO: fix neighborhoods)
 
 When writing hypotheses, be sure to define variables like p and delta p.
 (TODO: define variables)

@@ -25,7 +25,7 @@
    - Respond to messages from teammates within 24 hours
    - Notify your teammates if you are going to be unreachable for a period of time
 
-## Consequencess
+## Consequences
 
 1. How will we address non-performance regarding these goals, expectations, policies and procedures?
    - Give constructive feedback when teammates produce work that isn't up to group standards
@@ -37,5 +37,3 @@ Michael DeMarco
 Adam Mitha
 Acky Xu
 Icy Xu
-
-
